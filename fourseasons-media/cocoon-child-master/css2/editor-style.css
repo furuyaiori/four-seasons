@@ -1,0 +1,24 @@
+/*ビジュアルエディターのスタイルを書く*/
+/*ビジュアルエディターのスタイルを書く*/
+.kadomaru{
+	padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #865F26;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.background{
+	padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #F7F1EA;/*背景色*/
+}
+.box-title{
+	position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #865F26;
+    border-radius: 8px;
+}

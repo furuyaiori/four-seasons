@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.commonsearch .commonsearch-keyword,
+.commonsearch .postform,
+.commonsearch .commonsearch-submit {
+	outline: 0;
+}
+
+.main .commonsearch:first-of-type {
+	margin-bottom: 0;
+}
+
+.commonsearchbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.commonsearch .commonsearch-keyword::placeholder,
+.commonsearch .postform {
+	color: #666;
+}
+
+.commonsearch .postform {
+	width: 100%;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+}
+
+.commonsearch .commonsearch-submit {
+	background-color: #c1b0b1;
+	border: none;
+	color: #fff;
+	transition: all .1s;
+	letter-spacing: .1em;
+}
+
+.commonsearch .commonsearch-submit:hover {
+	opacity: .7;
+}
+
+.commonsearch-category {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
+.commonsearch-category::before {
+	position: absolute;
+	top: 0;
+	right: .8em;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: auto 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #999;
+	pointer-events: none;
+}
+
+
+@media (max-width: 767px) {
+
+	.commonsearchbox {
+		margin-bottom: 20px;
+	}
+
+	.commonsearch .commonsearch-keyword {
+		width: 100%;
+		margin-bottom: 6px;
+	}
+
+	.commonsearch .commonsearch-category {
+		width: calc(100% - 106px);
+	}
+
+	.commonsearch .commonsearch-submit {
+		width: 100px;
+		padding: 0 11px;
+		border-radius: 3px;
+		font-size: 13px;
+	}
+
+}
+
+
+@media (min-width: 768px) {
+
+	.commonsearchbox {
+		margin-bottom: 40px;
+	}
+
+	.commonsearch .commonsearch-keyword {
+		width: calc(60% - 60px);
+	}
+
+	.commonsearch .commonsearch-category {
+		width: calc(40% - 60px);
+	}
+
+	.commonsearch .commonsearch-submit {
+		width: 100px;
+		padding: 12px 11px 11px;
+		border-radius: 4px;
+		font-size: 14px;
+	}
+
+}
+
+
+@media (max-width: 1023px) {
+
+	.commonsearch .commonsearch-submit {
+		font-weight: bold;
+	}
+
+}
+
+
+@media (min-width: 1024px) {
+
+	.category:not(.search-results):not(.search-no-results) .main > .commonsearch,
+	.new-entries .main > .commonsearch {
+		display: none;
+	}
+
+}
+

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Cocoon Child
+Description: Cocoon専用の子テーマ
+Theme URI: https://wp-cocoon.com/
+Author: わいひら
+Author URI: https://nelog.jp/
+Template:   cocoon-master
+Version:    1.1.3
+*/
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+.p-header__menu-pc-list main{
+	padding:0px;
+}
+/*必要ならばここにコードを書く*/
+
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1023px以下*/
+@media screen and (max-width: 1023px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*834px以下*/
+@media screen and (max-width: 834px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*480px以下*/
+@media screen and (max-width: 480px){
+  /*必要ならばここにコードを書く*/
+}
+.p-header__menu-pc-list.sub .p-header__menu-pc-item-anchor{
+	text-decoration:none;
+}
+@media screen and(min-width:1279px){
+	.p-header__menu-pc-list.main .p-header__menu-pc-item-anchor{
+		text-decoration:none;
+	}
+}
+body{
+	background:#fff;
+}
+.p-header__menu-pc-item-anchor{
+	text-decoration:none;
+}
+.p-header__menu-pc-list{
+	display: flex;
+    align-items: left;
+    flex-direction: row;
+	justify-content: flex-end;
+}
+.front-page-type-index{
+/* 	display:none; */
+}
+.sidebar h2,.sidebar h3{
+	background:#b79c6a;
+	font-size:15px;
+	color:#fff;
+	padding:17px;
+}
+.cat-item{
+	margin-left:21px;
+	margin-right:21px;
+}
+.cat-item a{
+	border-bottom:1px solid;
+}
